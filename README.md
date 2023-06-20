@@ -8,4 +8,6 @@ kubectl config get-contexts | List the name of all the clusters present | [ref](
  k -n applications create rolebinding smoke-view --clusterrole view --user smoke| This allow Smoke ussers to view resources | ------|
  k auth can-i create deployments --as smoke -n applications| This will check the permission|----|
  kubectl whoami --show-identity| command to list users| ----|
+ kubectl get rolebindings --all-namespaces| List rolebindings|----|
+
 
